@@ -1,0 +1,76 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.contentEditable{
+  display: flex;
+  flex-direction: row;
+      border:1px solid grey;
+        border-radius: 4px;
+          max-height: 70px;
+            min-height: 42px;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 18px;
+            overflow: auto;
+            overflow-x: hidden;
+            word-wrap: break-word;
+            cursor: text;
+            width: 800px;
+            &:empty:before {
+              content: attr(placeholder);
+              font-size: 14px;
+              color: grey;
+          }
+}
+form{
+  background-color: aquamarine;
+  
+  height: 20px;
+
+}
+label{
+  justify-content: start;
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: 700px;
+
+}
+
+span{
+  font-weight: 600px;
+
+}
+
+input{
+  margin-right: 5px;
+}
+.btns{
+  margin-top: 10px;
+}
+button{
+  cursor: pointer;
+  margin-left: 5px;  
+  border: 2px solid #8993a4;
+  background-color: white;
+  padding: 4px;
+  border-radius: 4px;
+  color: #8993a4;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+button:focus, button:hover{
+  color: #0078db;
+  border: 2px solid #0078db;
+}
+
+.pasted{
+  color: black;
+  background-color: palevioletred;
+  font-weight: 700;
+  padding: 2px 4px;
+  height: 20px;
+}
+p{
+  margin: 0;
+}
